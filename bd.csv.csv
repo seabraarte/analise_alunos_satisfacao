@@ -1,0 +1,51 @@
+id,sexo,categoria,cuidado_saude_mental,posse_animal,xp_estatistica,tempo_redessociais,livros_lidos,curso,area_curso,satisfacao_curso
+1,Masculino,Cirurgião(ã)-dentista,TRUE,TRUE,Realizei algumas análises com necessidade de ajuda/supervisão de alguém,3,5,Mestrado,Reabilitação Oral,7
+2,Masculino,Cirurgião(ã)-dentista,TRUE,FALSE,Realizei várias análises sem nenhuma ajuda/supervisão,6,26,Doutorado,Implantodontia,6
+3,Feminino,Cirurgião(ã)-dentista,TRUE,TRUE,Realizei algumas análises sem necessidade de ajuda/supervisão de alguém,4,3,Doutorado,Reabilitação Oral,7
+4,Feminino,Cirurgião(ã)-dentista,TRUE,TRUE,Realizei algumas análises com necessidade de ajuda/supervisão de alguém,3,4,Mestrado,Reabilitação Oral,6
+5,Masculino,Biólogo(a) ,TRUE,TRUE,Realizei várias análises sem nenhuma ajuda/supervisão,2,0,Mestrado,Endodontia,8
+6,Feminino,Cirurgião(ã)-dentista,TRUE,FALSE,Realizei algumas análises com necessidade de ajuda/supervisão de alguém,1,3,Mestrado,Endodontia,6
+7,Feminino,Cirurgião(ã)-dentista,TRUE,TRUE,Realizei algumas análises com necessidade de ajuda/supervisão de alguém,4,5,Mestrado,Endodontia,5
+8,Feminino,Cirurgião(ã)-dentista,TRUE,TRUE,Realizei algumas análises com necessidade de ajuda/supervisão de alguém,3,6,Mestrado,Reabilitação Oral,8
+9,Feminino,Cirurgião(ã)-dentista,TRUE,TRUE,Nunca fiz nenhuma análise,8,7,Mestrado,Biociências e Ciências Forenses,6
+10,Feminino,Cirurgião(ã)-dentista,TRUE,FALSE,Realizei algumas análises com necessidade de ajuda/supervisão de alguém,2,15,Doutorado,Reabilitação Oral,8
+11,Feminino,Biomédico(a),TRUE,TRUE,Realizei algumas análises sem necessidade de ajuda/supervisão de alguém,2,3,Doutorado,Biociências e Ciências Forenses,4
+12,Masculino,Biólogo(a) ,TRUE,TRUE,Realizei algumas análises com necessidade de ajuda/supervisão de alguém,2,5,Mestrado,Periodontia,7
+13,Feminino,Cirurgião(ã)-dentista,TRUE,TRUE,Nunca fiz nenhuma análise,2,2,Mestrado,Biociências e Ciências Forenses,5
+14,Feminino,Cirurgião(ã)-dentista,TRUE,TRUE,Realizei algumas análises com necessidade de ajuda/supervisão de alguém,4,2,Mestrado,Reabilitação Oral,7
+15,Feminino,Cirurgião(ã)-dentista,TRUE,TRUE,Nunca fiz nenhuma análise,1,4,Mestrado,Periodontia,6
+16,Masculino,Cirurgião(ã)-dentista,TRUE,TRUE,Realizei algumas análises com necessidade de ajuda/supervisão de alguém,3,10,Mestrado,Endodontia,6
+17,Masculino,Cirurgião(ã)-dentista,FALSE,FALSE,Nunca fiz nenhuma análise,6,4,Mestrado,Endodontia,5
+18,Feminino,Cirurgião(ã)-dentista,FALSE,TRUE,Nunca fiz nenhuma análise,2,15,Mestrado,Endodontia,7
+19,Feminino,Biomédico(a),TRUE,FALSE,Realizei algumas análises sem necessidade de ajuda/supervisão de alguém,2,2,Mestrado,Biociências e Ciências Forenses,7
+20,Feminino,Cirurgião(ã)-dentista,TRUE,TRUE,Nunca fiz nenhuma análise,4,20,Mestrado,Endodontia,8
+21,Feminino,Desenvolvedor(a),FALSE,TRUE,Nunca fiz nenhuma análise,5,1,Mestrado,Periodontia,8
+22,Feminino,Cirurgião(ã)-dentista,TRUE,TRUE,Realizei algumas análises sem necessidade de ajuda/supervisão de alguém,2,4,Doutorado,Periodontia,9
+23,Feminino,Cirurgião(ã)-dentista,TRUE,TRUE,Nunca fiz nenhuma análise,7,0,Mestrado,Periodontia,9
+24,Masculino,Cirurgião(ã)-dentista,TRUE,FALSE,Realizei várias análises sem nenhuma ajuda/supervisão,5,1,Doutorado,Periodontia,6
+25,Feminino,Cirurgião(ã)-dentista,FALSE,TRUE,Nunca fiz nenhuma análise,2,8,Doutorado,Biociências e Ciências Forenses,6
+26,Feminino,Cirurgião(ã)-dentista,FALSE,TRUE,Realizei algumas análises com necessidade de ajuda/supervisão de alguém,4,0,Doutorado,Endodontia,5
+27,Masculino,Cirurgião(ã)-dentista,TRUE,FALSE,Nunca fiz nenhuma análise,4,3,Mestrado,Periodontia,8
+28,Feminino,Cirurgião(ã)-dentista,TRUE,FALSE,Realizei algumas análises com necessidade de ajuda/supervisão de alguém,3,1,Mestrado,Implantodontia,7
+29,Feminino,Cirurgião(ã)-dentista,FALSE,TRUE,Realizei algumas análises com necessidade de ajuda/supervisão de alguém,4,0,Mestrado,Implantodontia,9
+30,Masculino,Cirurgião(ã)-dentista,TRUE,TRUE,Nunca fiz nenhuma análise,4,3,Mestrado,Endodontia,5
+31,Feminino,Cirurgião(ã)-dentista,TRUE,TRUE,Nunca fiz nenhuma análise,6,3,Mestrado,Reabilitação Oral,9
+32,Masculino,Advogado(a),FALSE,TRUE,Nunca fiz nenhuma análise,4,2,Mestrado,Biociências e Ciências Forenses,9
+33,Masculino,Cirurgião(ã)-dentista,TRUE,TRUE,Realizei algumas análises com necessidade de ajuda/supervisão de alguém,3,4,Doutorado,Periodontia,9
+34,Masculino,Cirurgião(ã)-dentista,TRUE,TRUE,Realizei várias análises sem nenhuma ajuda/supervisão,6,0,Mestrado,Biociências e Ciências Forenses,6
+35,Feminino,Cirurgião(ã)-dentista,TRUE,FALSE,Realizei algumas análises sem necessidade de ajuda/supervisão de alguém,4,8,Doutorado,Implantodontia,8
+36,Feminino,Cirurgião(ã)-dentista,TRUE,TRUE,Realizei algumas análises com necessidade de ajuda/supervisão de alguém,3,6,Doutorado,Periodontia,8
+37,Masculino,Cirurgião(ã)-dentista,TRUE,TRUE,Realizei várias análises sem nenhuma ajuda/supervisão,2,9,Doutorado,Implantodontia,9
+38,Feminino,Biomédico(a),TRUE,TRUE,Realizei algumas análises com necessidade de ajuda/supervisão de alguém,1,10,Mestrado,Implantodontia,8
+39,Feminino,Biólogo(a) ,TRUE,FALSE,Realizei algumas análises com necessidade de ajuda/supervisão de alguém,4,5,Mestrado,Endodontia,6
+40,Feminino,Cirurgião(ã)-dentista,FALSE,TRUE,Realizei algumas análises com necessidade de ajuda/supervisão de alguém,7,2,Mestrado,Reabilitação Oral,5
+41,Feminino,Cirurgião(ã)-dentista,TRUE,TRUE,Nunca fiz nenhuma análise,5,1,Mestrado,Endodontia,5
+42,Feminino,Cirurgião(ã)-dentista,TRUE,TRUE,Realizei algumas análises com necessidade de ajuda/supervisão de alguém,14,1,Mestrado,Endodontia,7
+43,Feminino,Cirurgião(ã)-dentista,TRUE,TRUE,Realizei algumas análises sem necessidade de ajuda/supervisão de alguém,8,0,Mestrado,Reabilitação Oral,9
+44,Masculino,Cirurgião(ã)-dentista,TRUE,FALSE,Realizei algumas análises com necessidade de ajuda/supervisão de alguém,9,0,Mestrado,Biociências e Ciências Forenses,7
+45,Feminino,Cirurgião(ã)-dentista,TRUE,TRUE,Nunca fiz nenhuma análise,10,15,Mestrado,Reabilitação Oral,8
+46,Feminino,Biomédico(a),TRUE,TRUE,Realizei algumas análises com necessidade de ajuda/supervisão de alguém,12,7,Mestrado,Biociências e Ciências Forenses,5
+47,Feminino,Advogado(a),FALSE,TRUE,Nunca fiz nenhuma análise,5,2,Doutorado,Periodontia,8
+48,Masculino,Cirurgião(ã)-dentista,FALSE,FALSE,Realizei algumas análises com necessidade de ajuda/supervisão de alguém,4,20,Doutorado,Biociências e Ciências Forenses,5
+49,Masculino,Cirurgião(ã)-dentista,TRUE,TRUE,Nunca fiz nenhuma análise,6,2,Mestrado,Reabilitação Oral,5
+50,Feminino,Cirurgião(ã)-dentista,TRUE,TRUE,Nunca fiz nenhuma análise,8,3,Mestrado,Periodontia,7
