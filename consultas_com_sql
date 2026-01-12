@@ -1,0 +1,72 @@
+Questão:
+Realize a apuração das variáveis: “Sexo”, “Área de concentração da pós-graduação”, e “Experiência prévia com análise de dados” e apresente as tabelas de frequências e a representação gráfica adequadas.
+
+Essa questão é respondida com SQL através do comando abaixo:
+
+SELECT
+  xp_estatistica as /*substitua por sexo ou area_curso para obter o resultado desejado*/
+  "Experiência prévia com Estatísticas", /*dê o apelido correto para a variável*/
+  COUNT(*) AS frequencia,
+  CONCAT(ROUND(100.0 * COUNT(*) / SUM(COUNT(*)) OVER (), 2), '%') AS "frequencia (%)" /*O uso de aspas é necessário para apelidos de colunas com caracteres especiais*/
+FROM alunos
+GROUP BY xp_estatistica /*agrupe corretamente com a mesma variável (sexo, area_curso)*/
+ORDER BY frequencia DESC;
+<hr>
+Questão: Realize a apuração das variáveis “Saúde Mental” e “Possui animais de estimação” e de maneira a obter uma tabela de dupla entrada com a representação gráfica adequada.
+
+Esta questão requisita uma tabela de dupla entrada, que pode ser atingida com SQL com o seguinte comando:
+  
+SELECT
+  cuidado_saude_mental as "Cuidado com a saúde mental",
+  posse_animal as "Possui animal de estimação",
+  COUNT(*) AS frequencia,
+  ROUND(
+    100.0 * COUNT(*) 
+    / SUM(COUNT(*)) OVER (PARTITION BY cuidado_saude_mental),
+    2
+  ) AS percentual_linha
+FROM alunos
+GROUP BY cuidado_saude_mental, posse_animal
+ORDER BY cuidado_saude_mental, posse_animal;
+<hr>
+Questão: Realize a apuração da variável “Número de livros lidos” e apresente a representação tabular e gráfica adequada.
+A coluna livros_lidos é uma variável discreta com uma variabilidade que se representada integralmente resultaria em uma tabela enorme. A solução para resumir os dados é a criação de intervalos fixos, faixas ou grupos de uma determinada quantidade.
+No SQL, o SELECT associado ao CASE é capaz de criar os intervalos de livros lidos, sendo que cada intervalo é criado com os comandos WHEN, BETWEEN, AND e THEN. O intervalo de livros lidos é encerrado com END, e a seguir damos um apelido para essa coluna.
+  
+  SELECT
+    CASE
+      WHEN livros_lidos BETWEEN 0 AND 6  THEN '0–6'
+      WHEN livros_lidos BETWEEN 7 AND 13 THEN '7–13'
+      WHEN livros_lidos BETWEEN 14 AND 20 THEN '14–20'
+      WHEN livros_lidos BETWEEN 21 AND 27 THEN '21–27'
+    END AS "Intervalo de livros lidos",
+    COUNT(*) AS "Frequência",
+    ROUND(100.0 *  COUNT(*) / SUM( COUNT(*)) OVER (), 2) AS "Frequência (%)"
+  FROM alunos
+  GROUP BY "Intervalo de livros lidos"
+  ORDER by MIN(livros_lidos);
+
+<hr>
+
+Questão: Realize o cálculo das medidas de resumo da variável “Satisfação geral com a pós” dividida em dois grupos segundo a variável “Sexo”, e apresente as medidas de resumo em uma tabela juntamente com pelo menos uma representação gráfica dessas estatísticas.
+As medidas de resumo são as seguintes: média, mediana, moda, desvio-padrão, variância, coeficiente de variação, amplitude, assimetria, curtose, 1º quartil e 3º quartil.
+
+No SQL, de maneira razoavelmente simples, apenas a assimetria e curtose ficam de fora. Essas medidas são melhores calculadas no Python, R ou semelhantes. Para as outras medidas, segue o comando:
+SELECT
+    sexo,
+    COUNT(*)                     AS n,
+    AVG(satisfacao_curso)        AS media,
+    STDDEV_SAMP(satisfacao_curso) AS desvio_padrao,
+    VAR_SAMP(satisfacao_curso)    AS variancia,
+    STDDEV_SAMP(satisfacao_curso) / AVG(satisfacao_curso) * 100 AS coef_variacao,
+    MIN(satisfacao_curso)        AS minimo,
+    MAX(satisfacao_curso)        AS maximo,
+    MAX(satisfacao_curso) - MIN(satisfacao_curso) AS amplitude,
+    PERCENTILE_CONT(0.25) WITHIN GROUP (ORDER BY satisfacao_curso) AS q1,
+    PERCENTILE_CONT(0.50) WITHIN GROUP (ORDER BY satisfacao_curso) AS mediana,
+    PERCENTILE_CONT(0.75) WITHIN GROUP (ORDER BY satisfacao_curso) AS q3
+FROM alunos
+GROUP BY sexo;
+
+Não é uma tabela vertical no sentido clássico estatístico, pois o SQL demonstra a tabela de forma horizontal. Mas todos os valores condizem com aqueles obtidos através do Python.
+<hr>
